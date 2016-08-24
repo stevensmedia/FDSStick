@@ -9,7 +9,7 @@ TARGET    = fds
 CPPOBJS   = main.o spi.o fds.o device.o os.o
 ifeq ($(UNAME),Darwin)
  COBJS    = hidapi/hid-mac.o
- LIBS     = -framework IOKit -framework CoreFoundation
+ LIBS     = -framework IOKit -framework CoreFoundation -liconv
 endif
 ifeq ($(UNAME),Linux)
  COBJS    = hidapi/hid-linux.o
