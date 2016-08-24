@@ -27,7 +27,7 @@ enum {
 };
 
 
-void raw03_to_bin(uint8_t *raw, int rawSize, uint8_t **_bin, int *_binSize);
+static void raw03_to_bin(uint8_t *raw, int rawSize, uint8_t **_bin, int *_binSize);
 
 
 //don't include gap end
